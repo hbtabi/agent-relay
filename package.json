@@ -12,7 +12,7 @@
     "build": "tsc -p tsconfig.json",
     "start": "node dist/src/cli.js",
     "demo": "npm run build && node dist/src/cli.js \"Launch plan for a London AI video studio\"",
-    "test": "npm run build && node --test dist/test/",
+    "test": "npm run build && node --test dist/test/*.test.js",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "keywords": ["multi-agent", "llm", "orchestration", "typescript", "ai-agents"],
