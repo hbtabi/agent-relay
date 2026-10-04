@@ -1,0 +1,28 @@
+{
+  "name": "agent-relay",
+  "version": "0.1.0",
+  "description": "A lightweight multi-agent orchestration demo: planner, researcher and writer agents relaying messages over a typed bus.",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "bin": {
+    "agent-relay": "dist/src/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/cli.js",
+    "demo": "npm run build && node dist/src/cli.js \"Launch plan for a London AI video studio\"",
+    "test": "npm run build && node --test dist/test/",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "keywords": ["multi-agent", "llm", "orchestration", "typescript", "ai-agents"],
+  "author": "Mohammed Hassan bin Tayyeb <hasaantayyb1@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  }
+}
